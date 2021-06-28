@@ -1,6 +1,7 @@
 # Udacity Project 1 - Deploy Static Website on AWS
 
-Website URL: http://gustavo-484236353667-bucket.s3-website-us-east-1.amazonaws.com
+Website S3 URL: http://gustavo-484236353667-bucket.s3-website-us-east-1.amazonaws.com
+CloudFront URL: d2aw0nceugzfq.cloudfront.net
 
 ## Project Overview
 The cloud is perfect for hosting static websites that only include HTML, CSS, and JavaScript files that require no server-side processing. The whole project has two major intentions to implement:
