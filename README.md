@@ -10,7 +10,7 @@ The cloud is perfect for hosting static websites that only include HTML, CSS, an
 - Submission screenshots can be found under [`project-1/submission`](https://github.com/granzb11/udacity-nanodegree-projects/tree/main/project-1)
 
 ### Due Date
-Project Due Date: July 10th, 2021
-Submission Date: June 28th, 2021
-Project Duration: 1 day
-Difficulty: Easy
+- Project Due Date: July 10th, 2021
+- Submission Date: June 28th, 2021
+- Project Duration: 1 day
+- Difficulty: Easy
