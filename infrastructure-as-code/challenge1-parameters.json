@@ -1,0 +1,14 @@
+[
+	{
+		"ParameterKey": "VpcId",
+		"ParameterValue": "vpc-e3e57e88"
+	},
+    {
+        "ParameterKey": "EC2InstanceType",
+        "ParameterValue": "t3.micro"
+    },
+    {
+        "ParameterKey": "SubnetId",
+        "ParameterValue": "subnet-3b9f1c50"
+    }
+]

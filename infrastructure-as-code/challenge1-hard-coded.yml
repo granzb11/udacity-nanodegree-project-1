@@ -1,0 +1,31 @@
+Resources:
+  myWebAccessSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Udacity Challenge 1
+      GroupName: udacity-challenge-1-security-group
+      SecurityGroupIngress:
+          - IpProtocol: tcp
+            FromPort: 80
+            ToPort: 80
+            CidrIp: 0.0.0.0/0
+      VpcId: vpc-e3e57e88
+  myWebServerInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t3.micro
+      ImageId: "ami-0277b52859bac6f4b"
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: "true"
+          DeviceIndex: "0"
+          GroupSet:
+            - Ref: "myWebAccessSecurityGroup"
+          SubnetId: subnet-3b9f1c50
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          sudo yum update -y
+          sudo yum install -y httpd
+          sudo systemctl start httpd
+          sudo systemctl enable httpd
+
